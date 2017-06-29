@@ -9,9 +9,7 @@ This application is a tool to support the work of EAO staff, project proponents,
 
 The features provided by the web-based ESM application include:
 
-* a public-facing view of documents related to proposed development projects
-* the ability to comment on projects
-* as tools to support EAO staff, proponents, and stakeholders in performing tasks related to the environmental review process.
+* a public-facing view of documents
 
 ## Usage
 
