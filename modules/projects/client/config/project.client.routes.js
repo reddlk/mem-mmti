@@ -22,6 +22,11 @@ angular.module('project',["ui.router","ui.router.state.events"]).config (
 					{ heading: "Compliance Oversight", route:"project.compliance", active:false, page:'COMPLIANCE' },
 					{ heading: "Other Documents", route:"project.docs", active:false, page:'DOCS' }
 				];
+				$scope.tabs.forEach(function (tab) {
+					if($state.current.name === tab.route){
+						tab.active = true;
+					}
+				});
 				// Static map generation
 				// Force this false when we enter
 				$rootScope.isMapActive = false;
