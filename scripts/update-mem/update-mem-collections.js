@@ -245,12 +245,14 @@ var getAuthorization = function(project, collection) {
 	authorization.followUpDocuments.push({
 		name : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.displayName : '',
 		ref  : getDocumentURL(collection.mainDocument),
+		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.date : ''
 	});
 
  	_.each(collection.otherDocuments, function(otherDoc) {
 		authorization.followUpDocuments.push({
 			name : otherDoc && otherDoc.document ? otherDoc.document.displayName : '',
 			ref  : getDocumentURL(otherDoc),
+			date : otherDoc && otherDoc.document ? otherDoc.document.date : '',
 		});
 	});
 
@@ -281,12 +283,14 @@ var getInspection = function(project, collection) {
 	inspection.followUpDocuments.push({
 		name : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.displayName : '',
 		ref  : getDocumentURL(collection.mainDocument),
+		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.date : ''
 	});
 
  	_.each(collection.otherDocuments, function(otherDoc) {
 		inspection.followUpDocuments.push({
 			name : otherDoc && otherDoc.document ? otherDoc.document.displayName : '',
 			ref  : getDocumentURL(otherDoc),
+			date : otherDoc && otherDoc.document ? otherDoc.document.date : '',
 		});
 	});
 
