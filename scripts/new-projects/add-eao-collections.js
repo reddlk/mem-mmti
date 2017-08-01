@@ -1,9 +1,8 @@
 'use strict';
 
 var MongoClient = require('mongodb').MongoClient;
-var Promise     = require('Promise');
+var Promise     = require('promise');
 var _           = require('lodash');
-var path        = require('path');
 
 var defaultConnectionString = 'mongodb://localhost:27017/mmti-dev';
 var username                = '';
@@ -143,7 +142,7 @@ var getOtherDocument = function(collection) {
 		return {
 			name : doc['Doc Name'],
 			ref  : doc['Doc URL'],
-			date : doc['Doc Date'] || Date.now(),
+			date : doc['Doc Date'] || '',
 		};
 	});
 
