@@ -229,7 +229,7 @@ var getAuthorization = function(project, collection) {
 		followUpDocuments    : [],
 		authorizationSummary : '',
 		authorizationDate    : collection.date,
-		documentStatus       : collection.status,
+		documentStatus       : collection.status || (collection.type === 'Permit Amendment' ? 'Amended' : 'Issued'),
 		documentType         : 'Permit',
 		documentName         : name,
 		documentURL          : getDocumentURL(collection.mainDocument),

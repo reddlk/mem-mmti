@@ -1,0 +1,42 @@
+[
+  {
+    "code": "mount-polley",
+    "externalLinks": [
+      {
+        "link": "https://www.imperialmetals.com/our-operations/mount-polley-mine/overview",
+        "title": "Mount Polley Mine (Imperial Metals)",
+        "page": "DETAILS",
+        "type": "EXTERNAL_LINK",
+        "source": "IMPORT"
+      },
+      {
+        "link": "http://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/further-information/directives-alerts-incident-information/mount-polley-tailings-breach",
+        "title": "Mount Polley Tailings Breach (Ministry of Energy, Mines and Petroleum Resources)",
+        "page": "DETAILS",
+        "type": "EXTERNAL_LINK",
+        "source": "IMPORT"
+      },
+      {
+        "link": "http://www2.gov.bc.ca/gov/content/environment/air-land-water/spills-environmental-emergencies/spill-incidents/past-spill-incidents/mt-polley",
+        "title": "Mount Polley Tailing Dam Breach (Ministry of Environment Incident Response)",
+        "page": "DETAILS",
+        "type": "EXTERNAL_LINK",
+        "source": "IMPORT"
+      },
+      {
+        "link": "https://www.imperialmetals.com/our-operations/mount-polley-mine/overview",
+        "title": "Mount Polley Mine (Imperial Metals)",
+        "page": "COMPLIANCE",
+        "type": "EXTERNAL_LINK",
+        "source": "IMPORT"
+      },
+      {
+        "link": "https://www.imperialmetals.com/our-operations/mount-polley-mine/overview",
+        "title": "Mount Polley Mine (Imperial Metals)",
+        "page": "AUTHORIZATION",
+        "type": "EXTERNAL_LINK",
+        "source": "IMPORT"
+      }
+    ]
+  }
+]
