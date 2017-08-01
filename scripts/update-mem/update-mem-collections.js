@@ -113,8 +113,6 @@ var mapToMemProjectCode = function(code) {
 			return 'copper-mountain-similco';
 		case 'highland-valley-copper':
 			return 'highland-valley-copper-hvc';
-		case 'highland-valley-copper':
-			return 'highland-valley-copper-hvc';
 		default:
 			return code;
 	};
