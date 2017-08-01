@@ -16,7 +16,7 @@ var singleCode              = ''
 
 var args = process.argv.slice(2);
 if (args.length < 4) {
-	console.log('Using default localhost connection:', defaultConnectionString);
+	console.log('using default localhost connection:', defaultConnectionString);
 	sessionId  = args[0];
 	singleCode = args[1]; // single project rather than all
 	url        = defaultConnectionString;
@@ -43,17 +43,17 @@ var getProjectCollectionsFromMEM = function(code) {
 			}
 		}, function(err, res, body) {
 			if (err) {
-				console.log('x Error fetching collections for "' + code + '": ' + err);
+				console.log('x error fetching collections for "' + code + '": ' + err);
 				resolve();
 			} else if (res.statusCode != 200) {
 				console.log('x ' + res.statusCode + ' while fetching collections for "' + code + '"');
 				resolve();
 			} else if (!body) {
-				console.log('x Failed to fetch collections for "' + code + '"');
+				console.log('x failed to fetch collections for "' + code + '"');
 				resolve();
 			} else {
 				var collections = JSON.parse(body)
-				console.log(': Successfully fetched ' + collections.length + ' collection(s) for "' + code + '"');
+				console.log(': successfully fetched ' + collections.length + ' collection(s) for "' + code + '"');
 				resolve(collections);
 			}
 		});
@@ -73,17 +73,17 @@ var getProjectFromMEM = function(code) {
 			}
 		}, function(err, res, body) {
 			if (err) {
-				console.log('x Error fetching project for "' + code + '": ' + err);
+				console.log('x error fetching project for "' + code + '": ' + err);
 				resolve();
 			} else if (res.statusCode != 200) {
 				console.log('x ' + res.statusCode + ' while fetching project for "' + code + '"');
 				resolve();
 			} else if (!body) {
-				console.log('x Failed to fetch project for "' + code + '"');
+				console.log('x failed to fetch project for "' + code + '"');
 				resolve();
 			} else {
 				var project = JSON.parse(body)
-				console.log(': Successfully fetched MEM project for "' + code + '"');
+				console.log(': successfully fetched MEM project for "' + code + '"');
 				resolve(project);
 			}
 		});
@@ -95,10 +95,10 @@ var getLocalProjects = function(db) {
 		var query = singleCode ? { code: singleCode } : {};
 		db.collection('projects').find(query, { name: 1, code: 1 }).sort({ code: 1 }).toArray(function(err, object) {
 			if (err) {
-				console.log('x Failed to find projects');
+				console.log('x failed to find projects');
 				reject(err);
 			} else {
-				console.log(': Found projects');
+				console.log(': found projects');
 				resolve(object);
 			}
 		});
@@ -189,19 +189,19 @@ var updateProject = function(db, project) {
 			return db.collection('otherdocuments').remove({ projectCode: project.code });
 		})
 		.then(function() {
-			console.log('adding ' + authorizationList.length + ' authorization(s)...');
+			console.log(': adding ' + authorizationList.length + ' authorization(s) for "' + project.code + '"');
 			if (authorizationList.length > 0) {
 				return db.collection('authorizations').insertMany(authorizationList);
 			}
 		})
 		.then(function() {
-			console.log('adding ' + inspectionList.length + ' inspections(s)...');
+			console.log(': adding ' + inspectionList.length + ' inspections(s) for "' + project.code + '"');
 			if (inspectionList.length > 0) {
 				return db.collection('inspections').insertMany(inspectionList);
 			}
 		})
 		.then(function() {
-			console.log('adding ' + otherDocumentsList.length + ' other document(s)...');
+			console.log(': adding ' + otherDocumentsList.length + ' other document(s) for "' + project.code + '"');
 			if (otherDocumentsList.length > 0) {
 				return db.collection('otherdocuments').insertMany(otherDocumentsList);
 			}
