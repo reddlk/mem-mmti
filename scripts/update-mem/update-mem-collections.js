@@ -272,7 +272,7 @@ var getInspection = function(project, collection) {
 		inspectorInitials : '',
 		inspectionDate    : collection.date,
 		inspectionNum     : collection.displayName,
-		inspectionName    : (collection.isForMEM ? 'EMPR-' : (collection.isForENV ? 'ENV-' : '')) + collection.displayName + (collection.isForMEM ? ' (Ministry of Energy, Mines and Petroleum Resources)' : (collection.isForENV ? ' (Ministry of Environment)' : '')),
+		inspectionName    : (collection.isForMEM ? 'EMPR-' : (collection.isForENV ? 'ENV-' : '')) + collection.displayName + (collection.isForMEM ? ' (Ministry of Energy, Mines and Petroleum Resources)' : (collection.isForENV ? ' (Ministry of Environment and Climate Change Strategy)' : '')),
 		orgCode           : '',
 		projectCode       : project.code,
 		projectName       : project.name,
