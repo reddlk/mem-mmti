@@ -245,14 +245,14 @@ var getAuthorization = function(project, collection) {
 	authorization.followUpDocuments.push({
 		name : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.displayName : '',
 		ref  : getDocumentURL(collection.mainDocument),
-		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.date : ''
+		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.documentDate : ''
 	});
 
  	_.each(collection.otherDocuments, function(otherDoc) {
 		authorization.followUpDocuments.push({
 			name : otherDoc && otherDoc.document ? otherDoc.document.displayName : '',
 			ref  : getDocumentURL(otherDoc),
-			date : otherDoc && otherDoc.document ? otherDoc.document.date : '',
+			date : otherDoc && otherDoc.document ? otherDoc.document.documentDate : '',
 		});
 	});
 
@@ -283,14 +283,14 @@ var getInspection = function(project, collection) {
 	inspection.followUpDocuments.push({
 		name : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.displayName : '',
 		ref  : getDocumentURL(collection.mainDocument),
-		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.date : ''
+		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.documentDate : ''
 	});
 
  	_.each(collection.otherDocuments, function(otherDoc) {
 		inspection.followUpDocuments.push({
 			name : otherDoc && otherDoc.document ? otherDoc.document.displayName : '',
 			ref  : getDocumentURL(otherDoc),
-			date : otherDoc && otherDoc.document ? otherDoc.document.date : '',
+			date : otherDoc && otherDoc.document ? otherDoc.document.documentDate : '',
 		});
 	});
 
@@ -321,14 +321,14 @@ var getOtherDocument = function(project, collection) {
 	otherDocument.documents.push({
 		name : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.displayName : '',
 		ref  : getDocumentURL(collection.mainDocument),
-		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.date : ''
+		date : collection.mainDocument && collection.mainDocument.document ? collection.mainDocument.document.documentDate : ''
 	});
 
  	_.each(collection.otherDocuments, function(otherDoc) {
 		otherDocument.documents.push({
 			name : otherDoc && otherDoc.document ? otherDoc.document.displayName : '',
 			ref  : getDocumentURL(otherDoc),
-			date : otherDoc && otherDoc.document ? otherDoc.document.date : '',
+			date : otherDoc && otherDoc.document ? otherDoc.document.documentDate : '',
 		});
 	});
 
