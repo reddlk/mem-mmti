@@ -27,7 +27,7 @@ if (args.length < 4) {
 	url        = 'mongodb://' + username + ':' + password + '@' + host + ':27017/' + db;
 }
 
-var updates = require(filename || './projects-updates.json');
+var updates = require(filename || './projects-updates-2.json');
 
 var getLocalProjects = function(db) {
 	return new Promise(function(resolve, reject) {
@@ -62,6 +62,8 @@ var run = function () {
 					if (code) {
 						console.log(': updating ' + code);
 						updatePromises.push(projects.update({ code: code }, { $set: _.omit(update, ['code']) }));
+					} else {
+						console.log("Unexpected. Could not find project code in update", update);
 					}
 				});
 				return Promise.all(updatePromises);

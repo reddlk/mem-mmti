@@ -25,6 +25,7 @@ angular.module('project',["ui.router","ui.router.state.events"]).config (
 				$scope.tabs.forEach(function (tab) {
 					if($state.current.name === tab.route){
 						tab.active = true;
+						pageLinks(tab.page);
 					}
 				});
 				// Static map generation
