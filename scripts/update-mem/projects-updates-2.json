@@ -1,0 +1,54 @@
+[
+  {
+  "code" : "red-chris",
+  "externalLinks" : [
+    {
+      "link" : "https://www.imperialmetals.com/careers/our-operations-or-projects",
+      "title" : "Red Chris Mine (Imperial Metals)",
+      "page" : "DETAILS",
+      "type" : "EXTERNAL_LINK",
+      "source" : "IMPORT"
+    },
+    {
+      "link" : "https://www.imperialmetals.com/careers/our-operations-or-projects",
+      "title" : "Red Chris Mine (Imperial Metals)",
+      "page" : "COMPLIANCE",
+      "type" : "EXTERNAL_LINK",
+      "source" : "IMPORT"
+    },
+    {
+      "link" : "https://www.imperialmetals.com/careers/our-operations-or-projects",
+      "title" : "Red Chris Mine (Imperial Metals)",
+      "page" : "AUTHORIZATION",
+      "type" : "EXTERNAL_LINK",
+      "source" : "IMPORT"
+    }
+  ],
+    "content" : [
+      {
+        "html" : "Red Chris Mine Overview",
+        "text" : "Red Chris Mine Overview",
+        "title" : "Red Chris Mine Overview",
+        "page" : "DETAILS",
+        "type" : "SUBTITLE",
+        "source" : "IMPORT"
+      },
+      {
+        "html" : "<p>Red Chris is located approximately 18 km southeast of the village of Iskut and 80 km south of Dease Lake. Approximately 380 people are currently employed full time by the copper-gold mine.</p>\r<p>The Red Chris mine project received an environmental assessment (EA) certificate in August 2005, In July 2010, the Environmental Assessment Office granted a one-time five-year extension under section 18 of the Environmental Assessment Act. This extension gave the proponent until August 24, 2015 to substantially start the Red Chris mine project.</p>\r<p>Red Chris received Mines Act and Environmental Management approvals in May 2012, allowing for mine construction to begin. Construction, which cost nearly $662 million, was completed in November 2014, and the mine began regular production in June 2015. Red Chris is currently projected to operate until 2043.</p>",
+        "text" : "Red Chris is located approximately 18 km southeast of the village of Iskut and 80 km south of Dease Lake. Approximately 380 people are currently employed full time by the copper-gold mine. \r\rThe Red Chris mine project received an environmental assessment (EA) certificate in August 2005, In July 2010, the Environmental Assessment Office granted a one-time five-year extension under section 18 of the Environmental Assessment Act. This extension gave the proponent until August 24, 2015 to substantially start the Red Chris mine project.\r\rRed Chris received Mines Act and Environmental Management approvals in May 2012, allowing for mine construction to begin. Construction, which cost nearly $662 million, was completed in November 2014, and the mine began regular production in June 2015. Red Chris is currently projected to operate until 2043.",
+        "title" : "Introduction",
+        "page" : "DETAILS",
+        "type" : "INTRO_TEXT",
+        "source" : "IMPORT"
+      },
+      {
+        "html" : "<p>The Red Chris copper-gold mine is located approximately 18 km southeast of the village of Iskut and 80 km south of Dease Lake. Mine construction commenced in May 2012 and was completed in November 2014. The mine began regular production in June 2015.</p>",
+        "text" : "The Red Chris copper-gold mine is located approximately 18 km southeast of the village of Iskut and 80 km south of Dease Lake. Mine construction commenced in May 2012 and was completed in November 2014. The mine began regular production in June 2015.",
+        "title" : "Introduction",
+        "page" : "MINES",
+        "type" : "OVERVIEW_INTRO_TEXT",
+        "source" : "IMPORT"
+      }
+    ]
+  }
+]
